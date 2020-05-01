@@ -4,7 +4,7 @@ import '../../container/client_user/login.scss';
 
 const login = () => {
 	return(
-		<h1>Login</h1>
+		<h1 className="h1">Login</h1>
 		)
 }
 
