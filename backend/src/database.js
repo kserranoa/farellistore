@@ -1,7 +1,7 @@
 /*Hacer conexion de base de datos*/
 
 const mongoose = require('mongoose');
-const URI = 'mongodb://localhost/farellidb';/*direccion donde va a estar la base de datos*/
+const URI = process.env.mongodburi;/*direccion donde va a estar la base de datos*/
 mongoose.connect(URI,
 { useNewUrlParser:true,
 	useCreateIndex:true
