@@ -1,0 +1,49 @@
+/* Coleccion de productos */
+
+/* Product*/
+{
+	"id": 0,/* autoincremental, generado por la computadora*/
+	"price": 24000,
+	"quantity": 4,
+	"type": "", /* dress, top, pants, short, jumper, shoes, accessories*/
+	"name":"",
+	"description": "", 
+	"size": "", /* XS, S, M, L, XL */
+}
+
+/* Client*/
+{
+	"id": 234234, /* entero conformato X-XXXX-XXXX */
+	"fullname": "", /*nombre y apellido*/
+	"province": 4, /* opcion de seleccionar dentro de las 7 opciones*/
+	"address": "", /* la opcion para digitar la direccion exactamente*/
+	"district":"",
+	"age": 20, /* rango de 18 en adelante*/ 
+	"email": "", 
+	"password": "",
+}
+
+/* User*/
+{
+	"id": 234234, /* entero conformato X-XXXX-XXXX */
+	"fullname": " ", /*nombre y apellido*/
+	"password": "", 
+}
+
+/* Buys*/
+{
+	"total": 234234, /* dato de tipo double o flotante*/
+	"quantity": 1, /*cantidad de prendas*/
+	"idclient": 4, /*se puede tomar del doc client*/
+	"idproduct": "", /* tomar del documento product*/
+	"status":"",
+	"purchasedate": 20, /* */ 
+	"deliverydate": "", 
+	"deliveryaddress": "",
+}
+
+/* Payment Method*/
+{
+	"invoicenumber": 123123,
+	"invoicedate": 134143, /* toma la fecha del computador en formato CR */
+}

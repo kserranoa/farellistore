@@ -1,0 +1,10 @@
+
+/* */
+{
+	"nombre":"luis",
+	"edad": 28,
+	"status": true,
+	"fecha": new Date(),
+	"compras":{"producto1":"blusa", "producto2":"vestido"}
+
+}
