@@ -1,5 +1,6 @@
-const {Schema,model}= require ('moongose');
-const userSchema=new Schema({
+const { Schema,model }= require('mongoose');
+const userSchema= new Schema(
+{
 	username:{ /*usar metodo*/
 		type:String, 
 		required: true,

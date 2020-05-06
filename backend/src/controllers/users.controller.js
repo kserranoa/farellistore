@@ -1,12 +1,14 @@
 const userCtrl={};
 const User= require('../model/User');
-userCtrl.getUsers=async(req, res)=>{
+userCtrl.getUsers = async (req, res) => {
 	try {
 		const users=await User.find(); /*Buscar usuario*/
 		res.json(users);
 	}
 	catch (err) {
-		res.status(400).json({error:err}); 
+		res.status(400).json({ 
+			error: err
+		}); 
 	}
 };
 userCtrl.createUser=async (req,res)=>{
