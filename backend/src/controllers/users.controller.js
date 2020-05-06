@@ -28,3 +28,4 @@ userCtrl.deleteUser=async(req,res)=>{
 	await User.findByIdAndDelete(id);
 	res.json('Deleted');
 }
+module.exports=userCtrl;
