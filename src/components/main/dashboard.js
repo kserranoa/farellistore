@@ -1,9 +1,17 @@
 import React from 'react';
+import login from '../client_user/login';
+import ReactDOM from 'react-dom';
 
-const dashboard = () => {
+ReactDOM.render(
+	<React.StrictMode>
+	<login />
+	</React.StrictMode>,
+	document.getElementById('root')
+);
+
+const dashboard=() => {
 	return(
-		<h1> Dashboard</h1>
-		);
+	<h1> </h1>
+	);
 }
-
 export default dashboard;
