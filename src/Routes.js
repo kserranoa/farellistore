@@ -10,6 +10,7 @@ import index from './components/main/index';
 import modproducts from './components/products/modproducts';
 import catalogue from './components/products/catalogue';
 import processbuys from './components/buys/processbuys';
+import signup from './components/client_user/signup';
 
 const Router = () => {
 	return(
@@ -24,6 +25,7 @@ const Router = () => {
 		<Route path = '/modproducts' component={modproducts}/>
 		<Route path = '/catalogue' component={catalogue}/>
 		<Route path = '/processbuys' component={processbuys}/>
+		<Route path = '/signup' component={signup}/>
 		</Switch>
 		);
 }
