@@ -11,5 +11,6 @@ app.use(express.json());
 
 //routes
 app.use('/api/t', require('./routes/users'));
+app.use('/api/product', require('./routes/rtproduct.js'))
 
 module.exports = app; /*exportar servidor*/
