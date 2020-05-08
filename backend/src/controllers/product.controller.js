@@ -1,6 +1,6 @@
 const productCtrl={};
 const product= require('../model/mdproduct');
-productCtrl.getProducts = async (req, res) => {
+productCtrl.getProduct = async (req, res) => {
 	try {
 		const products=await product.find(); /*Buscar usuario*/
 		res.json(products);
