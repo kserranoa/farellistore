@@ -1,6 +1,11 @@
 const productCtrl={};
-const product= require('../model/mdproduct');
-productCtrl.getProduct = async (req, res) => {
+const Product= require('../model/mdproduct');
+
+productCtrl.getProducts = async (req, res) => { /*using get method for all Products*/
+	const Products = await Product.find(); /* same variable name (line 2 Product)*/
+}
+
+productCtrl.getProduct = async (req, res) => { /* get method for 1 product */
 	try {
 		const products=await product.find(); /*Buscar usuario*/
 		res.json(products);
