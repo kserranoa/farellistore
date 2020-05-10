@@ -6,7 +6,7 @@ const productSchema= new Schema(
 		filename:{type: String}, /*nombre del archivo */
 		path:{type: String},
 		originalname:{type: String},
-		mimetype:{type: String},
+		mimetype:{type: String}, /*tipo*/
 		size:{type: Number}, 
 		created_at:{type: Date, default:Date.now()},
 		
