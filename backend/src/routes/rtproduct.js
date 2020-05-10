@@ -36,7 +36,7 @@ router.get('/imagen/:id', async(req, res)=>{
 router.get('/imagen/:id/delete', async(req, res)=>{ 
 	const {id}=req.params;
 	const imagenDelete=await Product.findByIdAndDelete(id);
-	await unlink(path.resolve('./src' + imagenDelete.path);
+	await unlink(path.resolve('./src' + imagenDelete.path));
 	res.redirect('/api/product'); /* redirige a api product*/
 }); 
 /* */
